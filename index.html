@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/jpg" href="miki-logo.jpeg"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Miki Consulting</title>
+</head>
+<body>
+    <nav id="nav" class="nav">
+        <a href="#"><img src="miki-logo.jpeg" alt="logo"></a>
+
+        <a href="#menu" id="hamburger" style="color: white; margin: 30px;">
+			<span class="material-icons-outlined">menu</span>
+		</a>
+
+		<div id="menu">
+			<div id="close">
+                <a href="#">
+				<span style="color: white;"  class="material-icons-outlined">close</span>
+                
+				</a>
+            </div>
+
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#about">ABOUT US</a></li>
+            <li><a href="#">SERVICES</a></li>
+            <li><a href="#">PROJECTS</a></li>
+            <li><a href="#contact">CONTACT US</a></li>
+        </ul>
+        </div>
+    </nav>
+
+    <header style="background-image: url('header-bg.jpg'); background-position: center; background-size: cover;">
+        <h1>MIKI CONSULTING</h1>
+    </header>
+
+    <main>
+        <div class="intro">
+            <h1>What we do</h1>
+        </div>
+
+        <div id="about">
+            <h1>About us</h1>
+            <p>Miki Consulting is an engineering consultancy company founded in 2022. It's office is located in Shkodër, Albania.
+               This company has undertaken many projects, mainly designing the structure of houses and has completed hundreds of 
+               projects successfully.
+            </p>
+        </div>
+
+        <div id="contact">
+            <h1>Contact us</h1>
+            <div class="div">
+				<p>
+                    <a <a href="tel:+355 68 203 7770" target="_blank"><i id="call" class="fa fa-phone" aria-hidden="true"></i></a>
+                    <a class="call" href="tel:+355 68 203 7770">+355 68 203 7770</a>
+                </p>
+
+                <p>	
+                    <a href="mailto:mikiconsulting@hotmail.com" target="_blank"><i id="email" class="fa fa-envelope" aria-hidden="true"></i></a>
+				    <a class="email" href="mailto:mikiconsulting@hotmail.com" target="_blank">mikiconsulting@hotmail.com</a>
+                </p>
+                
+                <p>
+                    <a href="https://www.facebook.com/mcshpk" target="_blank"><i id="fb" class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a class="fb2" href="https://www.facebook.com/mcshpk" target="_blank">Miki Consulting</a>
+                </p>
+
+                <p> 
+                    <a href="https://www.instagram.com/mikiconsulting/" target="_blank"><i id="instagram" class="fa  fa-instagram" aria-hidden="true"></i></a>
+                    <a class="instagram" href="https://www.instagram.com/mikiconsulting/" target="_blank">Mikiconsulting</a>
+                </p>
+			</div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>© MIKI CONSULTING | All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+<script>
+    var myNav = document.getElementById("nav");
+
+window.onscroll = function() {
+  "use strict";
+  if (document.body.scrollTop >= 50 || document.documentElement.scrollTop >= 50) {
+    myNav.classList.add("scroll");
+  } else {
+    myNav.classList.remove("scroll");
+  }
+};
+</script>

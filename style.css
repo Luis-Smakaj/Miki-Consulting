@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Open+Sans&family=Poppins&family=Source+Sans+Pro&display=swap');
+
+/************************************** Mobile First ***********************************/
+
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Source Sans Pro';
+}
+
+.nav {
+    background-color: transparent;
+    transition: all .3s ease-in-out;
+}
+
+.scroll {
+    background-color: #000;
+    height: 45px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: black;
+    padding: 8px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+nav img {
+    height: 40px;
+    margin: 30px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 15px;
+    margin: 30px;
+	padding: 8px;
+    text-decoration: none;
+    position: relative;
+}
+
+header {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: darken;
+}
+
+header h1 {
+    font-size: 20px;
+    margin: 30px;
+    color: white;
+    font-family: 'Lato';
+}
+
+main h1 {
+    font-size: 20px;
+    margin: 15px;
+    font-family: 'Poppins';
+    text-align: center;
+}
+
+main p {
+    font-size: 15px;
+    margin: 20px;
+    line-height: 1.5;
+    font-family: 'Open Sans';
+}
+
+#contact .div {
+    display: block;
+}
+
+#contact .div p {
+    margin-bottom: 20px;
+    margin-top: 0;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgb(249, 249, 249);
+    padding: 20px;
+    font-size: 12px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#contact .div p span {
+    cursor: pointer;
+}
+
+#contact .div p:hover {
+    background-color: rgb(232, 232, 232);
+    transition: all 0.4s;
+}
+
+/******************************* Icons ********************************/
+
+#call {
+    color:black;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.call {
+    color:black;
+    text-decoration: none;
+}
+
+.call:hover {
+    text-decoration: underline;
+}
+
+#email {
+    color:black;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.email {
+    color:black;
+    text-decoration: none;
+}
+
+.email:hover {
+    text-decoration: underline;
+}
+
+#fb {
+    color:black;
+    font-size: 15px;
+}
+
+#fb:hover {
+    color: #3b5998;
+    transition: all 0.25s;
+}
+
+.fb2 {
+    color:black;
+    text-decoration: none;
+}
+
+.fb2:hover {
+    text-decoration: underline;
+}
+
+#instagram {
+    color:black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#instagram:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.25s;
+}
+
+.instagram {
+    color:black;
+    text-decoration: none;
+}
+
+.instagram:hover {
+    text-decoration: underline;
+}
+
+/****************************** Footer ***********************************/
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0d0d0d;
+    height: 30px;
+    margin: 0;
+}
+
+footer p {
+    font-size: 10px;
+    color: #878787;
+}
+
+footer p:hover {
+    color: white;
+    transition: all 0.8s;
+    cursor: pointer;
+}
+
+/******* Hamburger & Close icon on a small screen ********/
+
+#menu {
+	position: fixed;
+	right: -100%;
+	top: 0;
+    width: 50%;
+    transition: all 0.8s;
+}
+
+#menu:target {
+	right: 0;
+	transition: all 0.8s;
+}
+
+#menu #close {
+	background-color: black;
+    padding: 18.5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: black;
+    min-height: 100vh;
+}
+
+#menu ul li a {
+    display: block;
+	color: white;
+	text-decoration: none;
+	font-size: 16px;
+    margin: 20px;
+}
+
+#menu ul li a:hover {
+	color: rgb(192, 192, 192);
+}
+
+/********************************************************************************************************/
+/**************************************** Styling for a big screen **************************************/
+/********************************************************************************************************/
+
+@media(min-width: 768px) {
+
+    /******* Hamburger & Close icon on a big screen ********/
+
+    #hamburger, #menu #close {
+        display: none;
+    }
+
+    #menu {
+        position: static;
+    }
+
+    #menu ul {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: row;
+        background-color: transparent;
+    }
+    
+    #menu ul li a {
+        margin: 20px;
+        color: white;
+    }
+
+    /************************ Styling for a big screen **************************/
+
+    .scroll {
+        height: 60px;
+    }
+
+    nav {
+        height: 70px;
+    }
+
+    nav img {
+        height: 60px;
+        margin: 30px;
+    }
+
+    nav ul li a {
+        color: white;
+    }
+
+    header {
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 50px;
+        margin: 30px;
+        color: white;
+        font-family: 'Lato';
+    }
+
+    main h1 {
+        font-size: 30px;
+        margin: 70px;
+        margin-bottom: 20px;
+        margin-top: 30px;
+        text-align: left;
+    }
+
+    main p {
+        font-size: 18px;
+        margin: 70px;
+        margin-top: 20px;
+        line-height: 1.5;
+    }
+
+    #about {
+        margin-bottom: 20px;
+    }
+
+    #contact .div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #contact .div p {
+        display: inline-block;
+        border-radius: 20px;
+        background-color: rgb(249, 249, 249);
+        padding: 25px;
+        font-size: 15px;
+    }
+
+    #contact .div p span {
+        cursor: pointer;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+
+    /****************************** Icons ********************************/
+
+    #call {
+        font-size: 20px;
+    }
+
+    #email {
+        font-size: 20px;
+    }
+
+    #fb {
+        font-size: 20px;
+    }
+
+    #insatgram {
+        font-size: 20px;
+    }
+}
